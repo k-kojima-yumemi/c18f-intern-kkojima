@@ -15,3 +15,6 @@ jobs:
           php-version: '8.1'
           extensions: pdo_mysql
       - run: composer install
+        working-directory: src
+      - run: ./vendor/bin/phpunit
+        working-directory: src
