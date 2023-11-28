@@ -16,5 +16,7 @@ services:
         environment:
             MYSQL_ROOT_HOST: '%'
             MYSQL_ROOT_PASSWORD: 'password'
+        volumes:
+            - db-store:/var/lib/mysql:delegated
 volumes:
-    mysql-store:
+    db-store:
